@@ -38,18 +38,17 @@ h1 {
 
 #message-container {
   width: 600px;
-  height: fit-content;
   overflow: hidden;
-  transition: height 2.5s ease;
+  transition: height 1.5s ease;
   border: 1px solid rgb(190, 164, 129);
   background: #ececec;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
 #message {
-  height: 100%;
   padding: 20px;
   font-size: large;
   text-align: center;
+  height: fit-content;
   font-family: "Dancing Script", cursive;
 }
