@@ -38,7 +38,7 @@ h1 {
 
 #message-container {
   width: 600px;
-  height: 750px;
+  height: fit-content;
   overflow: hidden;
   transition: height 2.5s ease;
   border: 1px solid rgb(190, 164, 129);
