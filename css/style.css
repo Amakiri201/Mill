@@ -14,18 +14,18 @@ h6 {
   margin: 0;
 }
 
-h1{
-    text-align: left;
-    margin-left: 15px;
-    font-weight: 300;
-    font-size: 25px;
-    letter-spacing: 1px;
+h1 {
+  text-align: left;
+  margin-left: 15px;
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 1px;
 }
 
 .container {
-    top: 50%;
-    left: 50%;
-    position: fixed;
+  top: 50%;
+  left: 50%;
+  position: fixed;
   transform: translate(-50%, -50%);
 }
 
@@ -38,7 +38,7 @@ h1{
 
 #message-container {
   width: 600px;
-  height: 400px;
+  height: 750px;
   overflow: hidden;
   transition: height 2.5s ease;
   border: 1px solid rgb(190, 164, 129);
@@ -51,5 +51,5 @@ h1{
   padding: 20px;
   font-size: large;
   text-align: center;
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
