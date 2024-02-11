@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700&subset=latin-ext");
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #c59ca9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1{
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+  transform: translate(-50%, -50%);
+}
+
+.heart-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#message-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  transition: height 2.5s ease;
+  border: 1px solid rgb(190, 164, 129);
+  background: #ececec;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#message {
+  height: 100%;
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
