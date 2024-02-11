@@ -38,14 +38,14 @@ h1 {
 
 #message-container {
   max-width: 650px;
-  overflow: hidden;
-  max-height: fit-content;
-  transition: height 1.5s ease;
   height: fit-content;
+  overflow: hidden;
+  transition: height 1.5s ease;
   border: 1px solid rgb(190, 164, 129);
   background: #ececec;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
+
 
 #message {
   padding: 20px;
