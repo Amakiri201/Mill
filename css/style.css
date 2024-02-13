@@ -2,7 +2,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #c59ca9;
+  background: #0e0d0a;
 }
 
 h1,
@@ -15,12 +15,12 @@ h6 {
 }
 
 h1 {
-  text-align: left;
-  margin-left: 15px;
-  font-weight: 300;
-  font-size: 25px;
-  letter-spacing: 1px;
-}
+    text-align: left;
+    margin-left: 12px;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
 
 .container {
   top: 50%;
@@ -31,24 +31,37 @@ h1 {
 
 .heart-container {
   display: flex;
+  cursor: pointer;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 
 #message-container {
-  max-width: 650px;
-  height: fit-content;
   overflow: hidden;
-  transition: height 1.5s ease;
-  border: 1px solid rgb(190, 164, 129);
+  overflow-y: auto;
+  padding: 0px 20px 0px 20px;
+  border-radius: 5px;
   background: #ececec;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 15px rgba(144, 86, 9, 9);
+  max-height: 0; /* Set initial max-height to 0 */
+  transition: max-height 1.5s ease, padding 0.3s ease; /* Add transition for max-height and padding */
 }
 
+.message-container-open {
+  max-height: 500px; /* Set a maximum height when container is open */
+  padding: 20px; /* Adjust padding when container is open */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90vw; /* Set maximum width for mobile devices */
+  }
+}
 
 #message {
-  padding: 20px;
+  width: 100%;
+  text-align: center;
   font-size: large;
   text-align: center;
   font-family: "Dancing Script", cursive;
